@@ -1,26 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
-  font-family: 'Comfortaa', cursive;
+body {
+  font-family: "Comfortaa", cursive;
   background-color: black;
   color: white;
   overflow-x: hidden;
 }
 
-.container{
+.container {
   width: 1280px;
   margin: auto;
 }
 
-header{border-bottom: 5px solid orange;}
+header {
+  border-bottom: 5px solid orange;
+}
 
-#header{
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,14 +30,16 @@ header{border-bottom: 5px solid orange;}
   padding: 0 20px;
 }
 
-#header h2{font-size: 2rem;}
+#header h2 {
+  font-size: 2rem;
+}
 
-#search_box{
+#search_box {
   position: relative;
   width: 350px;
 }
 
-#search_box input{
+#search_box input {
   box-sizing: border-box;
   width: 100%;
   font-size: 1rem;
@@ -44,20 +47,20 @@ header{border-bottom: 5px solid orange;}
   border-radius: 25px;
   outline: none;
 
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
-  transition: all 0.30s ease-in-out;
-  border: 1px solid #DDDDDD;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #dddddd;
 }
- 
-input:focus{
+
+input:focus {
   box-shadow: 0 0 5px orange;
   border: 1px solid orange;
 }
 
-#search_box i{
+#search_box i {
   color: black;
   position: absolute;
   cursor: pointer;
@@ -66,9 +69,11 @@ input:focus{
   transition: 1s;
 }
 
-#search_box i:hover{color: orange;}
+#search_box i:hover {
+  color: orange;
+}
 
-#grid{
+#grid {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +81,7 @@ input:focus{
   align-items: flex-start;
 }
 
-.img{
+.img {
   width: 380px;
   height: 214px;
   margin-top: 15px;
@@ -86,35 +91,45 @@ input:focus{
   cursor: pointer;
 }
 
-@media(max-width:1280px){
- .container{width: 100%;}
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
 }
 
-@media(max-width:768px){
-  #main{width: 95%;}
+@media (max-width: 768px) {
+  #main {
+    width: 95%;
+  }
 
-  .img{width: 100%;}
+  .img {
+    width: 100%;
+  }
 
-  #header{
+  #header {
     margin: 10px 0;
     padding: 20px;
     gap: 10px;
     justify-content: center;
   }
 
-  #header h2{padding: 5px 0;}
+  #header h2 {
+    padding: 5px 0;
+  }
 }
 
-@media(max-width:480px){
-  #header h2{
+@media (max-width: 480px) {
+  #header h2 {
     text-align: center;
     font-size: 1.5rem;
   }
 
-  #search_box{
+  #search_box {
     width: 80%;
     margin: auto;
   }
 
-  #search_box input{font-size: .7rem;}
+  #search_box input {
+    font-size: 0.7rem;
+  }
 }
